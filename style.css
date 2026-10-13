@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* replace ts with the school font if I have time [and if I can find/access it]*/
+}
+
+
+header {
+    background: #202b47;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 38px;
+}
+
+header h1 {
+    color: #ffd000;
+    font-size: 32px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+h2 {
+    font-size: 30px;
+    margin: 0 0 8px 0;
+}
+
+#yearSelect {
+    width: 210px;
+    height: 55px;
+
+    border: 3px solid #000000;
+    background: #ffffff;
+
+    font-size: 20px;
+    padding: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+
+.subject-card {
+    border: 3px solid #000000;
+    margin-bottom: 12px;
+    background: #ffffff;
+}
+
+
+
+.subject-header {
+    width: 100%;
+
+    border: none;
+    background: white;
+
+    padding: 18px 20px;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+
+.subject-header::after {
+    content: "＋";
+    float: right;
+    font-size: 24px;
+}
+
+.subject-card.expanded .subject-header::after {
+    content: "−";
+}
+
+
+/* this information is hidden until the user clicks the thing */
+
+.subject-info {
+    display: none;
+
+    padding: 0 20px 20px 20px;
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+
+.subject-card.expanded .subject-info {
+    display: block;
+}
+
+
+.subject-info p {
+    margin: 10px 0;
+}
+
+.subject-row {
+    display: flex;
+    align-items: center;
+}
+
+.subject-checkbox {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.subject-header {
+    flex: 1;
+}
+
+#selectedList {
+    font-size: 18px;
+    line-height: 1.6;
+}
