@@ -1,0 +1,32 @@
+
+{
+  "8": {
+    "subjects": [
+      {
+        "name": "Art Explorer",
+        "prereqs": ["English"],
+        "description": "Explore art and creativity",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "History",
+        "prereqs": [],
+        "description": "Explore history",
+        "time": "1 semester"
+      }
+
+    ],
+    "requirements": ["English", "Maths"]
+  },
+  "9": {
+    "subjects": [
+      {
+        "name": "English",
+        "prereqs": [],
+        "description": "Develop English skills",
+        "time": "1-2 semesters"
+      }
+    ],
+    "requirements": ["English", "Maths"]
+  }
+}
