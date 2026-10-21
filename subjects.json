@@ -1,32 +1,239 @@
-
 {
-  "8": {
+  "7": {
     "subjects": [
       {
-        "name": "Art Explorer",
-        "prereqs": ["English"],
+        "name": "Art",
         "description": "Explore art and creativity",
         "time": "1-2 semesters"
       },
       {
-        "name": "History",
-        "prereqs": [],
+        "name": "Drama",
+        "description": "Perform plays",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Humanities",
         "description": "Explore history",
         "time": "1 semester"
-      }
+      },
+      {
+        "name": "Chinese",
+        "description": "Learn to speak Chinese",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "French",
+        "description": "Learn to speak French",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Japanese",
+        "description": "Learn to speak Japanese",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Maths",
+        "description": "Learn to speak numbers ",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Technology",
+        "description": "Learn to speak computer, food, and wood",
+        "time": "2 semesters"
+      },
+      {
+        "name": "English",
+        "description": "Learn to speak English",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Science",
+        "description": "Learn to speak the universe",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Music",
+        "description": "Learn to speak notes",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Health & PE",
+        "description": "Learn to speak sport and reproduction",
+        "time": "1-2 semesters"
+      },
 
     ],
     "requirements": ["English", "Maths"]
   },
+{
+  "8": {
+    "subjects": [
+      {
+        "name": "Art",
+        "prereqs": ["Year 7 Art"],
+        "description": "Explore art and creativity",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Drama",
+        "prereqs": ["Year 7 Drama"],
+        "description": "Perform plays",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "History",
+        "prereqs": ["Year 7 Humanities"],
+        "description": "Explore history",
+        "time": "1 semester"
+      },
+      {
+        "name": "Chinese",
+        "prereqs": ["Year 7 Chinese"],
+        "description": "Learn to speak Chinese",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "French",
+        "prereqs": ["Year 7 French"],
+        "description": "Learn to speak French",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Japanese",
+        "prereqs": ["Year 7 Japanese"],
+        "description": "Learn to speak Japanese",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Maths",
+        "prereqs": ["Year 7 Maths"],
+        "description": "Learn to speak numbers ",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Technology",
+        "prereqs": ["Year 7 technology"],
+        "description": "Learn to speak computer, food, and wood",
+        "time": "2 semesters"
+      },
+      {
+        "name": "English",
+        "prereqs": ["Year 7 English"],
+        "description": "Learn to speak English",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Science",
+        "prereqs": ["Year 7 Science"],
+        "description": "Learn to speak the universe",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Music",
+        "prereqs": ["Year 7 Music"],
+        "description": "Learn to speak notes",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Health & PE",
+        "prereqs": ["Year 7 HPE"],
+        "description": "Learn to speak sport and reproduction",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Geography",
+        "prereqs": ["Year 7 Humanities"],
+        "description": "Learn to speak countries",
+        "time": "1 semester"
+      },
+
+    ],
+    "requirements": ["English", "Maths"]
+  },
+
+{
   "9": {
     "subjects": [
       {
-        "name": "English",
-        "prereqs": [],
-        "description": "Develop English skills",
+        "name": "Art",
+        "prereqs": ["Year 8 Art"],
+        "description": "Explore art and creativity",
         "time": "1-2 semesters"
-      }
+      },
+      {
+        "name": "Drama",
+        "prereqs": ["Year 8 Drama"],
+        "description": "Perform plays",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "History",
+        "prereqs": ["Year 8 History"],
+        "description": "Explore history",
+        "time": "1 semester"
+      },
+      {
+        "name": "Chinese",
+        "prereqs": ["Year 8 Chinese"],
+        "description": "Learn to speak Chinese",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "French",
+        "prereqs": ["Year 8 French"],
+        "description": "Learn to speak French",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Japanese",
+        "prereqs": ["Year 8 Japanese"],
+        "description": "Learn to speak Japanese",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Maths",
+        "prereqs": ["Year 8 Maths"],
+        "description": "Learn to speak numbers ",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Technology",
+        "prereqs": ["Year 8 technology"],
+        "description": "Learn to speak computer, food, and wood",
+        "time": "2 semesters"
+      },
+      {
+        "name": "English",
+        "prereqs": ["Year 8 English"],
+        "description": "Learn to speak English",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Science",
+        "prereqs": ["Year 8 Science"],
+        "description": "Learn to speak the universe",
+        "time": "2 semesters"
+      },
+      {
+        "name": "Music",
+        "prereqs": ["Year 8 Music"],
+        "description": "Learn to speak notes",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Health & PE",
+        "prereqs": ["Year 8 HPE"],
+        "description": "Learn to speak sport and reproduction",
+        "time": "1-2 semesters"
+      },
+      {
+        "name": "Geography",
+        "prereqs": ["Year 8 Geography"],
+        "description": "Learn to speak countries",
+        "time": "1 semester"
+      },
+
     ],
     "requirements": ["English", "Maths"]
-  }
+  },
 }
