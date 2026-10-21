@@ -1,239 +1,2169 @@
 {
+
   "7": {
+
     "subjects": [
+
       {
-        "name": "Art",
-        "description": "Explore art and creativity",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Drama",
-        "description": "Perform plays",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Humanities",
-        "description": "Explore history",
+
+        "name": "art: the art explorer",
+
         "time": "1 semester"
-      },
-      {
-        "name": "Chinese",
-        "description": "Learn to speak Chinese",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "French",
-        "description": "Learn to speak French",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Japanese",
-        "description": "Learn to speak Japanese",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Maths",
-        "description": "Learn to speak numbers ",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Technology",
-        "description": "Learn to speak computer, food, and wood",
-        "time": "2 semesters"
-      },
-      {
-        "name": "English",
-        "description": "Learn to speak English",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Science",
-        "description": "Learn to speak the universe",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Music",
-        "description": "Learn to speak notes",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Health & PE",
-        "description": "Learn to speak sport and reproduction",
-        "time": "1-2 semesters"
+
       },
 
+      {
+
+        "name": "drama: run away to the circus",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama: step into the spotlight",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "humanities",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese heritage",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mathematics",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "technologies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ignite english",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "science",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "health and pe",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english literacy plus",
+
+        "time": "2 semesters"
+
+      }
+
     ],
-    "requirements": ["English", "Maths"]
+
+    "requirements": ["english", "maths", "science"]
+
   },
-{
+
   "8": {
+
     "subjects": [
+
       {
-        "name": "Art",
-        "prereqs": ["Year 7 Art"],
-        "description": "Explore art and creativity",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Drama",
-        "prereqs": ["Year 7 Drama"],
-        "description": "Perform plays",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "History",
-        "prereqs": ["Year 7 Humanities"],
-        "description": "Explore history",
+
+        "name": "art: surviving the apocalypse",
+
+        "prereqs": ["year 7 art"],
+
         "time": "1 semester"
+
       },
+
       {
-        "name": "Chinese",
-        "prereqs": ["Year 7 Chinese"],
-        "description": "Learn to speak Chinese",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "French",
-        "prereqs": ["Year 7 French"],
-        "description": "Learn to speak French",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Japanese",
-        "prereqs": ["Year 7 Japanese"],
-        "description": "Learn to speak Japanese",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Maths",
-        "prereqs": ["Year 7 Maths"],
-        "description": "Learn to speak numbers ",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Technology",
-        "prereqs": ["Year 7 technology"],
-        "description": "Learn to speak computer, food, and wood",
-        "time": "2 semesters"
-      },
-      {
-        "name": "English",
-        "prereqs": ["Year 7 English"],
-        "description": "Learn to speak English",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Science",
-        "prereqs": ["Year 7 Science"],
-        "description": "Learn to speak the universe",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Music",
-        "prereqs": ["Year 7 Music"],
-        "description": "Learn to speak notes",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Health & PE",
-        "prereqs": ["Year 7 HPE"],
-        "description": "Learn to speak sport and reproduction",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Geography",
-        "prereqs": ["Year 7 Humanities"],
-        "description": "Learn to speak countries",
+
+        "name": "art: the experimental studio",
+
+        "prereqs": ["year 7 art"],
+
         "time": "1 semester"
+
       },
+
+      {
+
+        "name": "drama: untold narratives",
+
+        "prereqs": ["year 7 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama: in the room where it happens",
+
+        "prereqs": ["year 7 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: audio fuse",
+
+        "prereqs": ["year 7 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: composition mixtape",
+
+        "prereqs": ["year 7 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "history: eras of change",
+
+        "prereqs": ["year 7 humanities"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "geography: cities and coasts",
+
+        "prereqs": ["year 7 humanities"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "chinese continuers",
+
+        "prereqs": ["year 7 chinese"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese heritage",
+
+        "prereqs": ["year 7 chinese"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french continuers",
+
+        "prereqs": ["year 7 french"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese continuers",
+
+        "prereqs": ["year 7 japanese"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mathematics",
+
+        "prereqs": ["year 7 maths"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "technologies",
+
+        "prereqs": ["year 7 technology"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english",
+
+        "prereqs": ["year 7 english"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ignite english",
+
+        "prereqs": ["year 7 english"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "science",
+
+        "prereqs": ["year 7 science"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "health and pe",
+
+        "prereqs": ["year 7 hpe"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "english literacy plus",
+
+        "time": "2 semesters"
+
+      }
 
     ],
-    "requirements": ["English", "Maths"]
+
+    "requirements": ["english", "maths", "science"]
+
   },
 
-{
   "9": {
+
     "subjects": [
+
       {
-        "name": "Art",
-        "prereqs": ["Year 8 Art"],
-        "description": "Explore art and creativity",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Drama",
-        "prereqs": ["Year 8 Drama"],
-        "description": "Perform plays",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "History",
-        "prereqs": ["Year 8 History"],
-        "description": "Explore history",
+
+        "name": "art: thinking in 3d",
+
+        "prereqs": ["year 8 art"],
+
         "time": "1 semester"
-      },
-      {
-        "name": "Chinese",
-        "prereqs": ["Year 8 Chinese"],
-        "description": "Learn to speak Chinese",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "French",
-        "prereqs": ["Year 8 French"],
-        "description": "Learn to speak French",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Japanese",
-        "prereqs": ["Year 8 Japanese"],
-        "description": "Learn to speak Japanese",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Maths",
-        "prereqs": ["Year 8 Maths"],
-        "description": "Learn to speak numbers ",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Technology",
-        "prereqs": ["Year 8 technology"],
-        "description": "Learn to speak computer, food, and wood",
-        "time": "2 semesters"
-      },
-      {
-        "name": "English",
-        "prereqs": ["Year 8 English"],
-        "description": "Learn to speak English",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Science",
-        "prereqs": ["Year 8 Science"],
-        "description": "Learn to speak the universe",
-        "time": "2 semesters"
-      },
-      {
-        "name": "Music",
-        "prereqs": ["Year 8 Music"],
-        "description": "Learn to speak notes",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Health & PE",
-        "prereqs": ["Year 8 HPE"],
-        "description": "Learn to speak sport and reproduction",
-        "time": "1-2 semesters"
-      },
-      {
-        "name": "Geography",
-        "prereqs": ["Year 8 Geography"],
-        "description": "Learn to speak countries",
-        "time": "1 semester"
+
       },
 
+      {
+
+        "name": "art: art meets science",
+
+        "prereqs": ["year 8 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "art: masterclass",
+
+        "prereqs": ["year 8 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "art: graphic design and illustration",
+
+        "prereqs": ["year 8 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama: the art of movement",
+
+        "prereqs": ["year 8 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama: reimagined realities",
+
+        "prereqs": ["year 8 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama: gothic drama",
+
+        "prereqs": ["year 8 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "media studies",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: the art of songwriting",
+
+        "prereqs": ["year 8 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: musical landscapes",
+
+        "prereqs": ["year 8 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: sonic fusion",
+
+        "prereqs": ["year 8 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "english",
+
+        "prereqs": ["year 8 english"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english: learner readiness program",
+
+        "prereqs": ["year 8 english"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mathematics",
+
+        "prereqs": ["year 8 maths"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "science",
+
+        "prereqs": ["year 8 science"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "geography: human wellbeing",
+
+        "prereqs": ["year 8 geography"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "history: war and freedom",
+
+        "prereqs": ["year 8 history"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "sport in society",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "health and physical education",
+
+        "prereqs": ["year 8 hpe"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "game on",
+
+        "prereqs": ["year 8 hpe"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "empower health",
+
+        "prereqs": ["year 8 hpe"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "girls specialist pe",
+
+        "prereqs": ["year 8 hpe"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "chinese continuers",
+
+        "prereqs": ["year 8 languages"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french",
+
+        "prereqs": ["year 8 languages"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese",
+
+        "prereqs": ["year 8 languages"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "technologies",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "english literacy plus",
+
+        "time": "2 semesters"
+
+      }
+
     ],
-    "requirements": ["English", "Maths"]
+
+    "requirements": ["english", "maths", "science"]
+
   },
+
+  "10": {
+
+    "subjects": [
+
+      {
+
+        "name": "foundational english",
+
+        "prereqs": ["year 9 english"],
+
+        "time": "1-2 semesters"
+
+      },
+
+      {
+
+        "name": "english literary creation",
+
+        "prereqs": ["year 9 english"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "english literary response",
+
+        "prereqs": ["year 9 english"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "specialist english",
+
+        "prereqs": ["year 9 english"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english as an additional language (eal)",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "maths methods 1",
+
+        "prereqs": ["year 9 maths"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "maths methods 2",
+
+        "prereqs": ["year 9 maths"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "general maths 1",
+
+        "prereqs": ["year 9 maths"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "general maths 2",
+
+        "prereqs": ["year 9 maths"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "exploring advanced maths",
+
+        "prereqs": ["year 9 maths"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "maths support",
+
+        "prereqs": ["year 9 maths"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "specialist biology",
+
+        "prereqs": ["year 9 science"],
+
+        "time": "1-2 semesters"
+
+      },
+
+      {
+
+        "name": "specialist chemistry",
+
+        "prereqs": ["year 9 science"],
+
+        "time": "1-2 semesters"
+
+      },
+
+      {
+
+        "name": "specialist physics",
+
+        "prereqs": ["year 9 science"],
+
+        "time": "1-2 semesters"
+
+      },
+
+      {
+
+        "name": "climate science",
+
+        "prereqs": ["year 9 science"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "biomedical studies",
+
+        "prereqs": ["year 9 science"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "economics",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "global futures",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "tourism",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "the space race",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "modern milestones",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "philosophy",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "people, politics and power",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "chinese continuers",
+
+        "prereqs": ["year 9 chinese"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese heritage",
+
+        "prereqs": ["year 9 chinese"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "specialist french",
+
+        "prereqs": ["year 9 french"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "specialist japanese",
+
+        "prereqs": ["year 9 japanese"],
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "art: advanced masterclass",
+
+        "prereqs": ["year 9 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "art: art and ideas",
+
+        "prereqs": ["year 9 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "art: ceramic studio",
+
+        "prereqs": ["year 9 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "art: graphic design and illustration",
+
+        "prereqs": ["year 9 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "art: wearable art",
+
+        "prereqs": ["year 9 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "creative art: photography studio",
+
+        "prereqs": ["year 9 art"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama a",
+
+        "prereqs": ["year 9 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama b",
+
+        "prereqs": ["year 9 drama"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "media studies a",
+
+        "prereqs": ["year 9 media"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "media studies b",
+
+        "prereqs": ["year 9 media"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: mix masters",
+
+        "prereqs": ["year 9 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: bridging generations",
+
+        "prereqs": ["year 9 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music: music mastery",
+
+        "prereqs": ["year 9 music"],
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "health and physical education",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "girls specialist pe",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "exercise physiology",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "outdoor pursuits",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "performance analysis",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "anatomy of human performance",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "architectural design",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "digital technologies: game design and coding",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "digital technologies: robotics",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "engineering and design",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "food technologies",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "product design",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "exploring identities and futures (eif)",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "action project",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "leadership",
+
+        "time": "1 semester"
+
+      }
+
+    ],
+
+    "requirements": ["english", "maths", "science", "exploring identities and futures (eif)"]
+
+  },
+
+  "11": {
+
+    "subjects": [
+
+      {
+
+        "name": "creative arts a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "creative arts b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "drama b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "media studies a: documentary",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "media studies b: narrative",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music advanced a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "music advanced b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "visual art: art a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "visual art: art b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "visual art: design a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "visual art: design b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "essential english",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english literary studies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english as an additional language (eal)",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "physical education a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "physical education b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "health and wellbeing",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "integrated learning (sport studies)",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "business innovation a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "business innovation b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "geography",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "modern history a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "modern history b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "ancient studies",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "legal studies a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "legal studies b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "tourism",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese continuers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese background speakers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french continuers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese continuers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "specialist maths 1",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "specialist maths 2",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "math methods 1",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "math methods 2",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "general maths 1",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "general maths 2",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "essential maths 1",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "essential maths 2",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "biology a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "biology b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "chemistry 1",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "chemistry 2",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "physics 1",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "physics 2",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "psychology a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "psychology b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "nutrition a",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "nutrition b",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "aviation scientific studies",
+
+        "time": "1-2 semesters"
+
+      },
+
+      {
+
+        "name": "architectural design",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "digital technologies",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "engineering and design",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "food technologies a: material solutions",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "food technologies b: industry and entrepreneurial solutions",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "product design",
+
+        "time": "1 semester"
+
+      },
+
+      {
+
+        "name": "ib film (hl and sl)",
+
+        "time": "2 years"
+
+      },
+
+      {
+
+        "name": "ib music (hl and sl)",
+
+        "time": "2 years"
+
+      },
+
+      {
+
+        "name": "ib visual art (hl and sl)",
+
+        "time": "2 years"
+
+      },
+
+      {
+
+        "name": "ib english literature",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib english language and literature",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib english b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib geography",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib economics",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib world history",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib psychology",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "theory of knowledge",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mandarin b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese a",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "activating identities and futures (aif)",
+
+        "time": "1 semester"
+
+      }
+
+    ],
+
+    "requirements": ["english (20 credits)", "maths (10 credits)", "activating identities and futures (aif)"]
+
+  },
+
+  "12": {
+
+    "subjects": [
+
+      {
+
+        "name": "visual arts: art",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "visual arts: design",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "creative arts",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "drama",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "media studies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "music explorations",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "music studies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english essential",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english literary studies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "english as an additional language (eal)",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "physical education",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "health and wellbeing",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "integrated learning (sport studies)",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "business innovation",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "legal studies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "modern history",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ancient studies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese continuers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese background",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french continuers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese continuers",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "specialist maths",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "maths methods",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "general maths",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "essential maths",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "biology",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chemistry",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "physics",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "psychology",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "nutrition",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "aviation scientific studies ii",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "architectural design",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "digital technologies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "engineering and design",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "food technologies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "product design",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib film (hl and sl)",
+
+        "time": "2 years"
+
+      },
+
+      {
+
+        "name": "ib music (hl and sl)",
+
+        "time": "2 years"
+
+      },
+
+      {
+
+        "name": "ib visual art (hl and sl)",
+
+        "time": "2 years"
+
+      },
+
+      {
+
+        "name": "ib english literature",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib english language and literature",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib english b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib geography",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib economics",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib world history",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "ib psychology",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mathematics: analysis and approaches (ana)",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mathematics: applications and interpretations (api)",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "environmental systems and societies",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "mandarin b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "chinese a",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "french b",
+
+        "time": "2 semesters"
+
+      },
+
+      {
+
+        "name": "japanese b",
+
+        "time": "2 semesters"
+
+      }
+
+    ],
+
+    "requirements": ["4 full-year stage 2 subjects (or ib diploma equivalent)", "activating identities and futures (aif)", "total 200 sace credits"]
+
+  }
+
 }
