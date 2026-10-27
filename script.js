@@ -12,14 +12,14 @@ fetch("./subjects.json")
 
         const years = Object.keys(subjectData);
 
-       /* years.forEach(year => {
+        years.forEach(year => {
             const option = document.createElement("option");
 
             option.value = year;
             option.textContent = `Year ${year}`;
 
-            yearSelect.appendChild(option);
-        });*/
+           // yearSelect.appendChild(option);
+        });
     });
     
 
