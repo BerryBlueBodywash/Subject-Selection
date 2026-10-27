@@ -5,23 +5,23 @@ const yearSelect = document.getElementById("yearSelect");
 const subjectsContainer = document.getElementById("subjects");
 const selectedList = document.getElementById("selectedList"); 
 
-/*fetch("./subjects.json")
+fetch("./subjects.json")
     .then(response => response.json())
     .then(data => {
         subjectData = data;
 
         const years = Object.keys(subjectData);
 
-        years.forEach(year => {
+       /* years.forEach(year => {
             const option = document.createElement("option");
 
             option.value = year;
             option.textContent = `Year ${year}`;
 
             yearSelect.appendChild(option);
-        });
+        });*/
     });
-    */
+    
 
 function isSelected(year, name) { //this stuff is because the years arean't label 'years' but just the first line of the
     return selectedSubjects[year] && selectedSubjects[year].includes(name);
