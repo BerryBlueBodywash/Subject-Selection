@@ -127,3 +127,70 @@ subjectCard.appendChild(subjectInfo);
     });
 
 });
+
+document.getElementById("downloadPDF").addEventListener("click", () => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+
+    const selectedYears = Object.keys(selectedSubjects).filter(
+        year => selectedSubjects[year]?.length > 0
+    );
+
+    if (selectedYears.length === 0) {
+        document.getElementById("downloadMessage").textContent =
+            "Please select at least one subject before downloading.";
+        return;
+    }
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(20);
+    doc.text("FPP Subject Selection", 20, 25);
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(
+        `Generated: ${new Date().toLocaleDateString("en-AU")}`,
+        20,
+        35
+    );
+
+    let y = 50;
+
+    // sirting subhects into year levels
+    selectedYears.sort((a, b) => Number(a) - Number(b));
+
+    selectedYears.forEach(year => {
+        if (y > 260) {
+            doc.addPage();
+            y = 20;
+        }
+
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(14);
+        doc.text(`Year ${year}`, 20, y);
+        y += 9;
+
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(11);
+
+        selectedSubjects[year].forEach(subjectName => {
+            if (y > 275) {
+                doc.addPage();
+                y = 20;
+            }
+
+            doc.text(`- ${subjectName}`, 25, y);
+            y += 7;
+        });
+
+        y += 7;
+    });
+
+    // Download the PDF
+    doc.save("FPP-Subject-Selection.pdf");
+
+    document.getElementById("downloadMessage").textContent =
+        "Your subject selection PDF has been downloaded.";
+});
+
