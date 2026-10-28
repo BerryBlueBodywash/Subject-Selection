@@ -4,6 +4,7 @@
 
 body {
     font-family: Arial, sans-serif; /* replace ts with the school font if I have time [and if I can find/access it]*/
+    margin: 0;
 }
 
 
@@ -13,6 +14,7 @@ header {
     display: flex;
     align-items: center;
     padding-left: 38px;
+    margin: 0;
 }
 
 header h1 {
