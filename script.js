@@ -103,6 +103,28 @@ checkbox.type = "checkbox";
 checkbox.classList.add("subject-checkbox");
 checkbox.checked = isSelected(selectedYear, subject.name);  //conditions for it to be checked here
 
+function toggleSubject(year, name, checked) {
+    if (!selectedSubjects[year]) {
+        selectedSubjects[year] = [];
+    }
+
+    if (checked) {
+        if (!selectedSubjects[year].includes(name)) {
+            selectedSubjects[year].push(name);
+        }
+    } else {
+        selectedSubjects[year] = selectedSubjects[year].filter(
+            subject => subject !== name
+        );
+    }
+
+    if (selectedSubjects[year].length === 0) {
+        delete selectedSubjects[year];
+    }
+
+    updateSelectedList();
+}
+
 checkbox.addEventListener("change", () => {
     toggleSubject(selectedYear, subject.name, checkbox.checked); //this is what checks if it is selected!! 
 });
@@ -134,15 +156,15 @@ document.getElementById("downloadPDF").addEventListener("click", () => {
 
 
     const selectedYears = Object.keys(selectedSubjects).filter(
-        year => selectedSubjects[year]?.length > 0
-    );
+    year => Array.isArray(selectedSubjects[year]) &&
+            selectedSubjects[year].length > 0
+);
 
-    if (selectedYears.length === 0) {
-        document.getElementById("downloadMessage").textContent =
-            "Please select at least one subject before downloading.";
-        return;
-    }
-
+if (selectedYears.length === 0) {
+    document.getElementById("downloadMessage").textContent =
+        "Please select at least one subject before downloading.";
+    return;
+}
     doc.setFont("helvetica", "bold");
     doc.setFontSize(20);
     doc.text("FPP Subject Selection", 20, 25);
