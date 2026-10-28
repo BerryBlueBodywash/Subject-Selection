@@ -193,4 +193,3 @@ document.getElementById("downloadPDF").addEventListener("click", () => {
     document.getElementById("downloadMessage").textContent =
         "Your subject selection PDF has been downloaded.";
 });
-
