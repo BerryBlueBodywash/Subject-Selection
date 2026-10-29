@@ -1,5 +1,5 @@
 let subjectData = {};
-let selectedSubjects = {};   //for example it'd be like "8": ["History"], "9": ["English"] }
+let selectedSubjects = {};   
 
 const yearSelect = document.getElementById("yearSelect");
 const subjectsContainer = document.getElementById("subjects");
@@ -9,170 +9,19 @@ fetch("./subjects.json")
     .then(response => response.json())
     .then(data => {
         subjectData = data;
-
         const years = Object.keys(subjectData);
+
         // trigger default render for the initial selected year
         if (years.length > 0) {
             yearSelect.value = years[0];
             yearSelect.dispatchEvent(new Event('change'));
         }
-
-        years.forEach(year => {
-            const option = document.createElement("option");
-
-            option.value = year;
-            option.textContent = `Year ${year}`;
-
-           // yearSelect.appendChild(option);
-        });
     });
-    
 
-function isSelected(year, name) { //this stuff is because the years arean't label 'years' but just the first line of the
+function isSelected(year, name) { 
     return selectedSubjects[year] && selectedSubjects[year].includes(name);
 }
 
-yearSelect.addEventListener("change", () => {
-    const currentYearData = subjectData[selectedYear];
-    const subjects = currentYearData.subjects;
-
-    // display year requirements at the top if present
-    if (currentYearData.requirements && currentYearData.requirements.length > 0) {
-        const reqDiv = document.createElement("div");
-        reqDiv.classList.add("year-requirements");
-        reqDiv.innerHTML = `<strong>year level requirements:</strong> ${currentYearData.requirements.join(", ")}`;
-        subjectsContainer.appendChild(reqDiv);
-    }
-    const selectedYear = yearSelect.value;
-    subjectsContainer.innerHTML = ""; //starts off empty
-
-    if (!selectedYear) {
-        return;
-    }
-
-    const subjects = subjectData[selectedYear].subjects;
-
-    //card for every subject
-    subjects.forEach(subject => {
-
-        const subjectCard = document.createElement("div");
-        subjectCard.classList.add("subject-card");
-
-        //put in the heading
-        const subjectHeader = document.createElement("button");
-        subjectHeader.classList.add("subject-header");
-
-        subjectHeader.textContent = subject.name;
-
-        //put in hte information
-        const subjectInfo = document.createElement("div");
-        subjectInfo.classList.add("subject-info");
-
-        //put in the description (all of these are taken from the json)
-        const description = document.createElement("p");
-
-        //if its empty show that it's empty
-        description.innerHTML = `
-            <strong>Description:</strong>
-            ${subject.description || "No description available. Conact your mentor group teacher, the subject leader, of subschool leader for more information"}
-        `;
-
-        subjectInfo.appendChild(description);
-
-        //prerequisites 
-        const prereqs = document.createElement("p");
-
-        let prereqText;
-
-        if (subject.prereqs && subject.prereqs.length > 0) {
-            prereqText = subject.prereqs.join(", "); //join them with a , considering its all tags [why tho if we're not tracking the old one?]
-        } else {
-            prereqText = "None";
-        }
-
-        prereqs.innerHTML = `
-            <strong>Prerequisites:</strong>
-            ${prereqText}
-        `;
-
-        subjectInfo.appendChild(prereqs);
-
-        //time
-        const time = document.createElement("p");
-
-        time.innerHTML = `
-            <strong>Time:</strong>
-            ${subject.time || "Not specified"}
-        `;
-
-        subjectInfo.appendChild(time);
-
-
-//the part with he checkbox and name
-const subjectRow = document.createElement("div");
-subjectRow.classList.add("subject-row");
-
-const checkbox = document.createElement("input");
-checkbox.type = "checkbox";
-checkbox.classList.add("subject-checkbox");
-checkbox.checked = isSelected(selectedYear, subject.name);  //conditions for it to be checked here
-
-function toggleSubject(year, name, checked) {
-    if (!selectedSubjects[year]) {
-        selectedSubjects[year] = [];
-    }
-
-    if (checked) {
-        if (!selectedSubjects[year].includes(name)) {
-            selectedSubjects[year].push(name);
-        }
-    } else {
-        selectedSubjects[year] = selectedSubjects[year].filter(
-            subject => subject !== name
-        );
-    }
-
-    if (selectedSubjects[year].length === 0) {
-        delete selectedSubjects[year];
-    }
-
-    updateSelectedList();
-}
-
-checkbox.addEventListener("change", () => {
-    toggleSubject(selectedYear, subject.name, checkbox.checked); //this is what checks if it is selected!! 
-});
-
-//putting that stuff into the row thing (pretty sure it can be simplified by a lot but wtv)
-subjectRow.appendChild(checkbox);
-subjectRow.appendChild(subjectHeader);
-
-subjectCard.appendChild(subjectRow);
-subjectCard.appendChild(subjectInfo);
-
-        subjectsContainer.appendChild(subjectCard);
-
-
-        //the exapnd/hidden thing 
-        subjectHeader.addEventListener("click", () => {
-
-            subjectCard.classList.toggle("expanded");
-
-        });
-
-    });
-
-});
-
-document.getElementById("downloadPDF").addEventListener("click", () => {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
-
-    const selectedYears = Object.keys(selectedSubjects).filter(
-    year => Array.isArray(selectedSubjects[year]) &&
-            selectedSubjects[year].length > 0
-);
 function updateSelectedList() {
     if (!selectedList) return;
     selectedList.innerHTML = "";
@@ -184,26 +33,143 @@ function updateSelectedList() {
         });
     });
 }
-if (selectedYears.length === 0) {
-    document.getElementById("downloadMessage").textContent =
-        "Please select at least one subject before downloading.";
-    return;
-}
+
+yearSelect.addEventListener("change", () => {
+    const selectedYear = yearSelect.value;
+    subjectsContainer.innerHTML = ""; //starts off empty
+
+    if (!selectedYear) {
+        return;
+    }
+
+    const currentYearData = subjectData[selectedYear];
+    const subjects = currentYearData.subjects;
+
+    // display year requirements at the top if present
+    if (currentYearData.requirements && currentYearData.requirements.length > 0) {
+        const reqDiv = document.createElement("div");
+        reqDiv.classList.add("year-requirements");
+        reqDiv.innerHTML = `<strong>year level requirements:</strong> ${currentYearData.requirements.join(", ")}`;
+        subjectsContainer.appendChild(reqDiv);
+    }
+
+    // card for every subject
+    subjects.forEach(subject => {
+        const subjectCard = document.createElement("div");
+        subjectCard.classList.add("subject-card");
+
+        // put in the heading
+        const subjectHeader = document.createElement("button");
+        subjectHeader.classList.add("subject-header");
+        subjectHeader.textContent = subject.name;
+
+        // put in the information
+        const subjectInfo = document.createElement("div");
+        subjectInfo.classList.add("subject-info");
+
+        // prerequisites 
+        const prereqs = document.createElement("p");
+        let prereqText;
+
+        if (subject.prereqs && subject.prereqs.length > 0) {
+            prereqText = subject.prereqs.join(", "); 
+        } else {
+            prereqText = "none";
+        }
+
+        prereqs.innerHTML = `
+            <strong>prerequisites:</strong>
+            ${prereqText}
+        `;
+        subjectInfo.appendChild(prereqs);
+
+        // time
+        const time = document.createElement("p");
+        time.innerHTML = `
+            <strong>time:</strong>
+            ${subject.time || "not specified"}
+        `;
+        subjectInfo.appendChild(time);
+
+        // checkbox and name row
+        const subjectRow = document.createElement("div");
+        subjectRow.classList.add("subject-row");
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.classList.add("subject-checkbox");
+        checkbox.checked = isSelected(selectedYear, subject.name);  
+
+        function toggleSubject(year, name, checked) {
+            if (!selectedSubjects[year]) {
+                selectedSubjects[year] = [];
+            }
+
+            if (checked) {
+                if (!selectedSubjects[year].includes(name)) {
+                    selectedSubjects[year].push(name);
+                }
+            } else {
+                selectedSubjects[year] = selectedSubjects[year].filter(
+                    sub => sub !== name
+                );
+            }
+
+            if (selectedSubjects[year].length === 0) {
+                delete selectedSubjects[year];
+            }
+
+            updateSelectedList();
+        }
+
+        checkbox.addEventListener("change", () => {
+            toggleSubject(selectedYear, subject.name, checkbox.checked); 
+        });
+
+        subjectRow.appendChild(checkbox);
+        subjectRow.appendChild(subjectHeader);
+
+        subjectCard.appendChild(subjectRow);
+        subjectCard.appendChild(subjectInfo);
+
+        subjectsContainer.appendChild(subjectCard);
+
+        // expand/hidden toggle
+        subjectHeader.addEventListener("click", () => {
+            subjectCard.classList.toggle("expanded");
+        });
+    });
+});
+
+document.getElementById("downloadPDF").addEventListener("click", () => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    const selectedYears = Object.keys(selectedSubjects).filter(
+        year => Array.isArray(selectedSubjects[year]) &&
+                selectedSubjects[year].length > 0
+    );
+
+    if (selectedYears.length === 0) {
+        document.getElementById("downloadMessage").textContent =
+            "please select at least one subject before downloading.";
+        return;
+    }
+
     doc.setFont("helvetica", "bold");
     doc.setFontSize(20);
-    doc.text("FPP Subject Selection", 20, 25);
+    doc.text("fpp subject selection", 20, 25);
 
     doc.setFont("helvetica", "normal");
     doc.setFontSize(11);
     doc.text(
-        `Generated: ${new Date().toLocaleDateString("en-AU")}`,
+        `generated: ${new Date().toLocaleDateString("en-au")}`,
         20,
         35
     );
 
     let y = 50;
 
-    // sirting subhects into year levels
     selectedYears.sort((a, b) => Number(a) - Number(b));
 
     selectedYears.forEach(year => {
@@ -214,7 +180,7 @@ if (selectedYears.length === 0) {
 
         doc.setFont("helvetica", "bold");
         doc.setFontSize(14);
-        doc.text(`Year ${year}`, 20, y);
+        doc.text(`year ${year}`, 20, y);
         y += 9;
 
         doc.setFont("helvetica", "normal");
@@ -233,10 +199,8 @@ if (selectedYears.length === 0) {
         y += 7;
     });
 
-    // Download the PDF
-    doc.save("FPP-Subject-Selection.pdf");
+    doc.save("fpp-subject-selection.pdf");
 
     document.getElementById("downloadMessage").textContent =
-        "Your subject selection PDF has been downloaded.";
+        "your subject selection pdf has been downloaded.";
 });
-updateSelectedList()
