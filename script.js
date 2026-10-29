@@ -11,6 +11,11 @@ fetch("./subjects.json")
         subjectData = data;
 
         const years = Object.keys(subjectData);
+        // trigger default render for the initial selected year
+        if (years.length > 0) {
+            yearSelect.value = years[0];
+            yearSelect.dispatchEvent(new Event('change'));
+        }
 
         years.forEach(year => {
             const option = document.createElement("option");
@@ -28,7 +33,16 @@ function isSelected(year, name) { //this stuff is because the years arean't labe
 }
 
 yearSelect.addEventListener("change", () => {
+    const currentYearData = subjectData[selectedYear];
+    const subjects = currentYearData.subjects;
 
+    // display year requirements at the top if present
+    if (currentYearData.requirements && currentYearData.requirements.length > 0) {
+        const reqDiv = document.createElement("div");
+        reqDiv.classList.add("year-requirements");
+        reqDiv.innerHTML = `<strong>year level requirements:</strong> ${currentYearData.requirements.join(", ")}`;
+        subjectsContainer.appendChild(reqDiv);
+    }
     const selectedYear = yearSelect.value;
     subjectsContainer.innerHTML = ""; //starts off empty
 
@@ -159,7 +173,17 @@ document.getElementById("downloadPDF").addEventListener("click", () => {
     year => Array.isArray(selectedSubjects[year]) &&
             selectedSubjects[year].length > 0
 );
-
+function updateSelectedList() {
+    if (!selectedList) return;
+    selectedList.innerHTML = "";
+    Object.keys(selectedSubjects).forEach(year => {
+        selectedSubjects[year].forEach(sub => {
+            const li = document.createElement("li");
+            li.textContent = `year ${year}: ${sub}`;
+            selectedList.appendChild(li);
+        });
+    });
+}
 if (selectedYears.length === 0) {
     document.getElementById("downloadMessage").textContent =
         "Please select at least one subject before downloading.";
@@ -215,3 +239,4 @@ if (selectedYears.length === 0) {
     document.getElementById("downloadMessage").textContent =
         "Your subject selection PDF has been downloaded.";
 });
+updateSelectedList()
